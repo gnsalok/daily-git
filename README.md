@@ -11,24 +11,34 @@ Be confident while using GIT on daily activity as a Developer 😉
 
 ## Table of contents
 
-* [Install git](#install-git)
-* [Setting up git](#setting-up-git)
-* [Applying colour to git ](#applying-colour-to-git)
-* [Initializing a repository in an existing directory](#initializing-a-repository-in-an-existing-directory)
-* [Checking the status of your files](#checking-the-status-of-your-files)
-* [Staging files](#staging-files)
-* [Stashing files](#stashing-files)
-* [Committing files](#committing-files)
-* [Branching and merging](#branching-and-merging)
-* [Resetting](#resetting)
-* [Git remote](#git-remote)
-* [Git grep](#git-grep)
-* [Git blame](#git-blame)
-* [Git log](#git-log)
-* [Checking what you are committing](#checking-what-you-are-committing)
-* [Useful Commands](#useful-commands)
-* [Useful Alias](#useful-alias)
-* [Contributing](#contributing)
+- [daily-git](#daily-git)
+  - [Overview](#overview)
+- [Useful Git Commands](#useful-git-commands)
+  - [About it](#about-it)
+  - [Table of contents](#table-of-contents)
+      - [Git](#git)
+      - [Install Git](#install-git)
+        - [Setting up git](#setting-up-git)
+        - [Applying colour to git](#applying-colour-to-git)
+        - [Initializing a repository in an existing directory](#initializing-a-repository-in-an-existing-directory)
+      - [Checking the status of your files](#checking-the-status-of-your-files)
+      - [Staging files](#staging-files)
+      - [Stashing files](#stashing-files)
+      - [Committing files](#committing-files)
+      - [Branching and merging](#branching-and-merging)
+      - [Fetching and checking out remote branches](#fetching-and-checking-out-remote-branches)
+      - [Merging branch to trunk/master](#merging-branch-to-trunkmaster)
+      - [Updating a local repository with changes from a Github repository](#updating-a-local-repository-with-changes-from-a-github-repository)
+      - [Tracking existing branch](#tracking-existing-branch)
+      - [Resetting](#resetting)
+      - [Git remote](#git-remote)
+      - [Git grep](#git-grep)
+      - [Git blame](#git-blame)
+      - [Git log](#git-log)
+      - [Checking what you are committing](#checking-what-you-are-committing)
+      - [Useful commands](#useful-commands)
+      - [Useful alias](#useful-alias)
+    - [Contributing](#contributing)
 
 #### Git
 
@@ -287,6 +297,10 @@ $ git reset --hard sha
 
 # Reset the staging area and the working directory to match the most recent commit. In addition to unstaging changes, the --hard flag tells Git to overwrite all changes in the working directory, too.
 $ git reset --hard
+
+
+# To reset top most commit in any branch ie. `main`
+$ git reset --hard HEAD~1
 ```
 
 #### Git remote
