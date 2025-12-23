@@ -372,6 +372,10 @@ $ git log --since=yesterday
 
 # Shows log by author and searching for specific term inside the commit message
 $ git log --grep "term" --author "name"
+
+# show log with chnages file 
+$ git log --raw --no-merges
+
 ```
 
 #### Checking what you are committing
